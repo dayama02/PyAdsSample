@@ -190,6 +190,9 @@
     <TcSignTwinCatCertName>TcTestCert</TcSignTwinCatCertName>
     <TcSignTwinCatCertPW>1</TcSignTwinCatCertPW>
   </PropertyGroup>
+  <PropertyGroup Label="TcSign" Condition="'$(Configuration)|$(Platform)'=='Debug|TwinCAT RT (x64)'">
+    <TcSignTwinCat>true</TcSignTwinCat>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|TwinCAT UM (x86)'">
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|TwinCAT UM (x86)'">
